@@ -14,3 +14,18 @@ Dit is tevens een voorbeeld van een tabel in Markdown!
 |----|-----|----|----| 
 |Bold (**vetgedrukt**)| `** Tekst in bold **` of `__ Tekst in bold __`|`** Deze tekst wordt vet getoond **`|**Deze tekst wordt vet getoond**| 
 |italic(_schuin_)| `* schuine tekst *` of `_ schuine tekst _`|`* Deze tekst wordt schuin getoond *`|*Deze tekst wordt schuin getoond*| 
+
+# lists
+
+Dit is een voorbeeld van een unordered list en ordered list
+een unordered list kan worden weergegeven met een - * +
+een ordered list word weergegeven met een cijfer en spatie(1. 2. 3.)
+voorbeeld:
+
+-Mark Rutte
+*Rob Lansu
++Atmaca 
+
+1.George Washington
+2.Trump
+3.Elon Musk
