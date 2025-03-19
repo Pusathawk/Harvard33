@@ -22,10 +22,10 @@ een unordered list kan worden weergegeven met een - * +
 een ordered list word weergegeven met een cijfer en spatie(1. 2. 3.)
 voorbeeld:
 
--Mark Rutte
-*Rob Lansu
-+Atmaca 
+- Mark Rutte
+* Rob Lansu
++ Atmaca 
 
-1.George Washington
-2.Trump
-3.Elon Musk
+1. George Washington
+2. Trump
+3. Elon Musk
