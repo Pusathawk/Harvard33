@@ -12,4 +12,4 @@ Als je meerdere headings in je file hebt maakt GitHub een inhoudsopgave, die te 
 Dit is tevens een voorbeeld van een tabel in Markdown!
 |Effect|Syntax| Voorbeeld| Weergave| 
 |----|-----|----|----| 
-|Bold (vetgedrukt)| `** Tekst in bold **` of `__ Tekst in bold __`|`** Deze tekst wordt vet getoond **`|** Deze tekst wordt vet getoond **| 
+|Bold (**vetgedrukt**)| `** Tekst in bold **` of `__ Tekst in bold __`|`** Deze tekst wordt vet getoond **`|**Deze tekst wordt vet getoond**| 
