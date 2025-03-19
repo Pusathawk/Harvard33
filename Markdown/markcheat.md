@@ -18,8 +18,10 @@ Dit is tevens een voorbeeld van een tabel in Markdown!
 
 Styling kenmerken kunnen genest worden, dus binnen het ene styling element kan een ander styling element worden toegepast
 Voorbeeld:
-'**Deze tekst is <ins>extreem</ins>belangrijk**`
-**Deze tekst is <ins>extreem</ins>belangrijk**
+
+'**Deze tekst is <ins>extreem</ins> belangrijk**`
+
+**Deze tekst is <ins>extreem</ins> belangrijk**
 
 # lists
 
