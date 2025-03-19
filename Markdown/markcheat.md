@@ -17,9 +17,9 @@ Dit is tevens een voorbeeld van een tabel in Markdown!
 |Strikethrough(~~Doorgehaald~~)| `~~ doorgehaalde tekst ~~`| `~~ Deze tekst wordt doorgehaald getoond ~~`|~~Deze tekst wordt doorgehaald getoond~~|
 
 Styling kenmerken kunnen genest worden, dus binnen het ene styling element kan een ander styling element worden toegepast
-Voorbeeld:
-\**Deze tekst is `<ins>extreem</ins>` belangrijk**`
-**Deze tekst is <ins>extreem</ins> belangrijk**
+Voorbeeld:</br>
+\**Deze tekst is `<ins>extreem</ins>` belangrijk**`</br>
+**Deze tekst is <ins>extreem</ins> belangrijk**</br>
 
 # Lists
 
