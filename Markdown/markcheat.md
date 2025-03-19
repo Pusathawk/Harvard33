@@ -20,3 +20,18 @@ Styling kenmerken kunnen genest worden, dus binnen het ene styling element kan e
 Voorbeeld:
 '**Deze tekst is <ins>extreem</ins>belangrijk**`
 **Deze tekst is <ins>extreem</ins>belangrijk**
+
+# lists
+
+Dit is een voorbeeld van een unordered list en ordered list
+een unordered list kan worden weergegeven met een - * +
+een ordered list word weergegeven met een cijfer en spatie(1. 2. 3.)
+voorbeeld:
+
+-Mark Rutte
+*Rob Lansu
++Atmaca 
+
+1.George Washington
+2.Trump
+3.Elon Musk
