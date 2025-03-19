@@ -13,3 +13,4 @@ Dit is tevens een voorbeeld van een tabel in Markdown!
 |Effect|Syntax| Voorbeeld| Weergave| 
 |----|-----|----|----| 
 |Bold (**vetgedrukt**)| `** Tekst in bold **` of `__ Tekst in bold __`|`** Deze tekst wordt vet getoond **`|**Deze tekst wordt vet getoond**| 
+|italic(schuin) | `** Tekst in bold **` of `__ Tekst in bold __`|`** Deze tekst wordt vet getoond **`|**Deze tekst wordt vet getoond**| 
