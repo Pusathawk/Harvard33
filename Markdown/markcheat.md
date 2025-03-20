@@ -14,8 +14,14 @@ Dit is tevens een voorbeeld van een tabel in Markdown!
 |----|-----|----|----| 
 |Bold (**vetgedrukt**)| `** Tekst in bold **` of `__ Tekst in bold __`|`** Deze tekst wordt vet getoond **`|**Deze tekst wordt vet getoond**| 
 |italic(_schuin_)| `* schuine tekst *` of `_ schuine tekst _`|`* Deze tekst wordt schuin getoond *`|*Deze tekst wordt schuin getoond*| 
+|Strikethrough(~~Doorgehaald~~)| `~~ doorgehaalde tekst ~~`| `~~ Deze tekst wordt doorgehaald getoond ~~`|~~Deze tekst wordt doorgehaald getoond~~|
 
-# lists
+Styling kenmerken kunnen genest worden, dus binnen het ene styling element kan een ander styling element worden toegepast
+Voorbeeld:</br>
+\**Deze tekst is `<ins>extreem</ins>` belangrijk**`</br>
+**Deze tekst is <ins>extreem</ins> belangrijk**</br>
+
+# Lists
 
 Dit is een voorbeeld van een unordered list en ordered list
 een unordered list kan worden weergegeven met een - * +
