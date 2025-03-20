@@ -43,4 +43,6 @@ voorbeeld:
 
 # links
 
-[]
+[[kingdom(biologie)|]]  
+[[Seattle,Washington|]] 
+
