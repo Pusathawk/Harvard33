@@ -43,6 +43,6 @@ voorbeeld:
 
 # links
 
-[[kingdom (biologie)|]]  
-[[Seattle, Washington|]] 
+[google zoeken](https://google.com)
+
 
