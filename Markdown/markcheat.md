@@ -21,6 +21,11 @@ Voorbeeld:</br>
 \**Deze tekst is `<ins>extreem</ins>` belangrijk**`</br>
 **Deze tekst is <ins>extreem</ins> belangrijk**</br>
 
+De uitlijning van een kolom kan geregeld worden met een dubbele punt in de line separator tussen de heading en de eerste datarow
+Zet de dubbele punt vóór de streepjes (:-----) om links uit te lijnen, erachter (--------:) om rechts uit te lijnen, en mocht je onverhoopt willen centreren dan zet je gewoon een dubbele punt voor en achter de streepjes (:--------:)
+
+Met Markdown kun je geen images, lists of HTML tags opnemen in een tabel
+
 # Lists
 
 Dit is een voorbeeld van een unordered list en ordered list
