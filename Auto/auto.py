@@ -19,19 +19,7 @@ class auto:
 		print (f"Er zit nu {self.Brandstof} liters in de tank")
 
 
-Auto1 =auto("Mercedes", "190")
-Auto2 =auto("Opel", "Kadet")
-Auto3 = auto("Simca", "1100")
 
-print (Auto1.merk)
-print(Auto1.model)
-Auto1.TankInhoud = 75
-Auto1.Verbruik = 10
-print(Auto1.TankInhoud)
-print(Auto1.Verbruik)
-Auto1.Rijden(150)
-Auto1.Tanken(20)
-Auto1.Rijden(150)
 
 
 
