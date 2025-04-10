@@ -31,7 +31,7 @@ In een Django (HTML) template kun je variabelen opnemen:
 
 Logic: 
 {%  if newyear %}
-`<h1>` YES \`</h1>`
+`<h1>` YES `</h1\>`
 {% else %}
-`<h1>` NO \`</h1>`
+`<h1>` NO `</h1>`
 {% endif %}   //Django requires endif
