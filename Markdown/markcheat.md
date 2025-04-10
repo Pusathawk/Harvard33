@@ -3,6 +3,7 @@
 
 De Heading hierboven is een Heading 1 en wordt aangegeven met één hashtag.
 Headings 2 en 3 heeben 2 of 3 hashtags (voorafgaand aan de heading, denk aan de spatie tussen de hashtag(s) en de titel) 
+Als je HTML tags wilt weergeven, en niet uit laten voeren kun je deze met backticks omlijsten
 
 # Inhoudsopgave
 Speciale GitHub feature, geen onderdeel van MarkDown: de table of Contents
