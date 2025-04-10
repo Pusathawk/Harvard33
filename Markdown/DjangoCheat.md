@@ -29,9 +29,10 @@ urlpatterns = [path("",views.index, name="index")]
 In een Django (HTML) template kun je variabelen opnemen:
 {{ name }}
 
-Logic: 
-{%  if newyear %}
+Logic:
+
+```{%  if newyear %}
 `<h1>` YES `</h1\>`
 {% else %}
 `<h1>` NO `</h1>`
-{% endif %}   //Django requires endif
+{% endif %}   //Django requires endif```
