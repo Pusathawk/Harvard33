@@ -37,4 +37,3 @@ Logic:
 <h1> NO </h1>
 {% endif %}   //Django requires endif
 ```
-In een code blok is het niet nodig de HTML tags te voorzien van een backtick

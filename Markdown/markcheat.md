@@ -3,7 +3,7 @@
 
 De Heading hierboven is een Heading 1 en wordt aangegeven met één hashtag.
 Headings 2 en 3 heeben 2 of 3 hashtags (voorafgaand aan de heading, denk aan de spatie tussen de hashtag(s) en de titel) 
-Als je HTML tags wilt weergeven, en niet uit laten voeren kun je deze met backticks omlijsten
+Als je HTML tags wilt weergeven, en niet uit laten voeren kun je deze met backticks omlijsten, beter is het de "code block" functionaliteit te gebruiken: zet drie backticks op een eigen regel, en sluit af met drie backticks op een eigen regel. In een code block hoeven HTML tags niet van een backtick voorzien te worden. 
 
 # Inhoudsopgave
 Speciale GitHub feature, geen onderdeel van MarkDown: de table of Contents
@@ -42,8 +42,12 @@ voorbeeld:
 2. Trump
 3. Elon Musk
 
-# links
+# Links
 
+``` 
+[google zoeken](https://google.com)
+```
+geeft: </br>
 [google zoeken](https://google.com)
 
 
