@@ -1,11 +1,11 @@
 # Cheat Sheet Python
 
 ## Basis Syntax
-functie</br>
+** functie **</br>
 def HelloWorld(Naam):</br>
     print (f"Hallo Wereld, welkom {Naam}")</br>
 
-if</br>
+** if **</br>
 if b>a:</br>
     doe dit</br>
 elif a==b:</br>
@@ -14,19 +14,19 @@ else:</br>
     geef het op</br>
 
 ## Lists
-Een nieuwe lege list</br>
+** Een nieuwe lege list **</br>
 AppelKist = []</br>
 </br>
-Toevoegen aan een list</br>
+** Toevoegen aan een list **</br>
 AppelKist.append(object)</br>
 </br>
-Aantal items in een list</br>
+** Aantal items in een list **</br>
 len(AppelKist)</br>
 
 ## Loops
 for x in AppelKist:</br> 
     print(x)</br>
-
+</br>
 for x in range(10)</br>
     print(x*x)</br>
 </br>
