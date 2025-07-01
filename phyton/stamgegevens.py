@@ -3,13 +3,6 @@ import sqlite3
 conn = sqlite3.connect('autoverhuur.sql')
 cursor = conn.cursor()
 
-""""
-#**
-print(conn)
-
-
-#**/
-"""
 while True:
 
     print ("1. Merk toevoegen ")
@@ -19,8 +12,11 @@ while True:
     keuze = input("Kies een optie: ")
 
     if keuze == "1":
+        print("")
         merk = input("Voer de naam van het merk in: ")
         sql = f"INSERT INTO Merk (MerkNaam) VALUES ('{merk}');"
+        print(f"SQL: {sql}")
+        print('--------------------------------------------------') 
         cursor.execute(sql)
         conn.commit()
         print(f"Merk '{merk}' is toegevoegd.")
@@ -30,6 +26,7 @@ while True:
         sql = "SELECT * FROM Merk order by MerkNaam;"
         cursor.execute(sql)
         merken = cursor.fetchall()
+        print("")
         print("Lijst met merken:")
         for m in merken:
             print(m[1])
