@@ -10,7 +10,7 @@ Speciale GitHub feature, geen onderdeel van MarkDown: de table of Contents
 Als je meerdere headings in je file hebt maakt GitHub een inhoudsopgave, die te bereiken is met het hamburgermenu rechtsboven
 
 # Line Break
-Om een line break in te voegen kun je de HTML tag </br> gebruiken, of twee of meer spaties aan het einde van de regel
+Om een line break in te voegen kun je de HTML tag `</br>` gebruiken, of twee of meer spaties aan het einde van de regel
 
 # Styling
 Dit is tevens een voorbeeld van een tabel in Markdown!
