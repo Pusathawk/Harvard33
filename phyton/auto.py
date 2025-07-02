@@ -5,14 +5,15 @@ class Auto:
         self.model = model
         self.TankInhoud = 50
         self.AantalLitersInTank= 15
-        self.Verbruik = 5   
+        self.Verbruik = 5  # verbruik in liters per 100 km  
         self.SalesAuto =True
     
 
     def Rijden(self, AantalKilometers):
-        nodig = AantalKilometers * self.Verbruik / 100
+        nodig= AantalKilometers * self.Verbruik / 100 #brandstof nodig voor het aantal km
         if self.AantalLitersInTank - nodig < 0:
-            print(f"Het is niet mogelijk om {AantalKilometers} kilometer te rijden, er is maar {self.AantalLitersInTank} liter brandstof aanwezig.")
+            print(f"Het is niet mogelijk om {AantalKilometers} kilometer te rijden, er is maar {self.AantalLitersInTank} liter brandstof aanwezig. ")
+            print(f"Hiermee kunt u {self.AantalLitersInTank/ self.Verbruik * 100} km rijden")
         else:
             self.AantalLitersInTank -= nodig
             print(f"We hebben {AantalKilometers} kilometer gereden. We hebben nog {self.AantalLitersInTank:.2f} liter over.")
