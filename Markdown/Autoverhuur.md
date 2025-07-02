@@ -24,19 +24,20 @@ Create Table Auto  (
     AutoActief Boolean default true
 ); 
 
-Create Index AutoMerk on Auto (AutoMerkID);
-Create Index AutoBrandstof on Auto (AutoBrandstofID);
+Create Index AutoMerk on Auto (AutoMerkID);   
+Create Index AutoBrandstof on Auto (AutoBrandstofID);   
 
 Merk
 - MerkID
 - MerkNaam
 - MerkActief
 
-Create Table Merk (
-    MerkID integer primary key autoincrement, 
-    MerkNaam TEXT not null, 
-    MerkActief boolean default true
- ); 
+Create Table Merk (   
+    MerkID integer primary key autoincrement,    
+    MerkNaam TEXT not null,    
+    MerkActief boolean default true   
+ );    
+  
 
 Brandstof
 - BrandstofID

@@ -14,8 +14,9 @@ else:</br>
     geef het op</br>
 
 **Een inline if:**
-expression_if_true if condition else expression_if_false
-"Showroom" if auto.SalesAuto == True else "VerhuurAuto"
+expression_if_true if condition else expression_if_false   
+Showroom" if auto.SalesAuto == True else "VerhuurAuto"   
+
 
 ## Lists
 **Een nieuwe lege list**</br>
