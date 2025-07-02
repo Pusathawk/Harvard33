@@ -5,7 +5,7 @@
 def HelloWorld(Naam):</br>
     print (f"Hallo Wereld, welkom {Naam}")</br>
 
-** if **</br>
+**if**</br>
 if b>a:</br>
     doe dit</br>
 elif a==b:</br>
@@ -13,14 +13,20 @@ elif a==b:</br>
 else:</br>
     geef het op</br>
 
+**Een inline if:**
+expression_if_true if condition else expression_if_false
+"Showroom" if auto.SalesAuto == True else "VerhuurAuto"
+
 ## Lists
-** Een nieuwe lege list **</br>
+**Een nieuwe lege list**</br>
 AppelKist = []</br>
 </br>
-** Toevoegen aan een list **</br>
+
+**Toevoegen aan een list**</br>
 AppelKist.append(object)</br>
 </br>
-** Aantal items in een list **</br>
+
+**Aantal items in een list**</br>
 len(AppelKist)</br>
 
 ## Loops

@@ -1,4 +1,4 @@
-# auto.py
+.0# auto.py
 class Auto:
     def __init__(self, merk, model):
         self.merk = merk
@@ -20,8 +20,9 @@ class Auto:
 
     def Tanken(self, AantalLiters):
         if self.AantalLitersInTank + AantalLiters > self.TankInhoud:
-            print("De tank kan niet zoveel brandstof bevatten!")
-            self.AantalLitersInTank = self.TankInhoud
+            print("De tank kan niet zoveel brandstof bevatten!\r\nTanken afgebroken.")
+            print(f"De tank kan maximaal {self.TankInhoud} liter bevatten.")
+            # self.AantalLitersInTank = self.TankInhoud
         else:
             self.AantalLitersInTank += AantalLiters
             print(f"Er zit nu {self.AantalLitersInTank} liter brandstof in de tank.")
