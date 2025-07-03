@@ -11,8 +11,8 @@ def toon_autos(autos):
         for i, auto in enumerate(autos):
             # if auto.SalesAuto:
             # expression_if_true if condition else expression_if_false
-            print(f"{i + 1}. {auto.merk} {auto.model} ({"Showroom" if auto.SalesAuto == True else "VerhuurAuto"}, Liters in auto:  {auto.AantalLitersInTank}L, Tankcapaciteit: {auto.TankInhoud}L, Brandstof verbruik:  {auto.Verbruik}L/100km, Actieradius: {auto.AantalLitersInTank/auto.Verbruik*100}km) ") 
-            
+            print(f"{i + 1}. {auto.merk} {auto.model} ({'Showroom' if auto.SalesAuto else 'VerhuurAuto'}, Liters in auto: {auto.AantalLitersInTank}L, Tankcapaciteit: {auto.TankInhoud}L, Verbruik: {auto.Verbruik}L/100km, Actieradius: {auto.AantalLitersInTank / auto.Verbruik * 100:.1f} km, Aankoopdatum: {auto.Aankoopdatum})") 
+
 while True:
     print("\nMenu:")
     print("1. Auto toevoegen")
@@ -20,6 +20,7 @@ while True:
     print("3. Auto tanken")
     print("4. Verhuur/Sales status wijzigen")
     print("11. verbruik wijzigen")
+    print("13. Aankoopdatum wijzigen")
     print("99. Programma beëindigen")
 
     keuze = input("Maak een keuze: ")
@@ -81,6 +82,24 @@ while True:
                 toon_autos(autos)
             else:
                 print("ongeldige keuze.")
+
+    elif keuze == "13":
+        toon_autos(autos)
+        if autos:
+            auto_index = int(input("Kies een auto (nummer): ")) - 1
+            if 0 <= auto_index < len(autos):
+                nieuwe_datum_str = input("Voer de nieuwe aankoopdatum in (YYYY-MM-DD): ")
+                try:
+                    from datetime import datetime
+                    nieuwe_datum = datetime.strptime(nieuwe_datum_str, "%Y-%m-%d").date()
+                    autos[auto_index].Aankoopdatum = nieuwe_datum
+                    print(f"Aankoopdatum van {autos[auto_index].merk} {autos[auto_index].model} is gewijzigd naar {nieuwe_datum}.")
+                except ValueError:
+                    print("Ongeldige datum. Gebruik het formaat YYYY-MM-DD.")
+            else:
+                print("Ongeldige keuze.")
+        else:
+            print("Er zijn geen auto's om te wijzigen.")
              
 
                

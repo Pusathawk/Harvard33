@@ -1,4 +1,6 @@
 .0# auto.py
+from datetime import date
+
 class Auto:
     def __init__(self, merk, model):
         self.merk = merk
@@ -7,6 +9,8 @@ class Auto:
         self.AantalLitersInTank= 15
         self.Verbruik = 5  # verbruik in liters per 100 km  
         self.SalesAuto =True
+        self.Aankoopdatum = date.today()  # standaard vandaag
+
     
 
     def Rijden(self, AantalKilometers):
