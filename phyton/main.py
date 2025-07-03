@@ -19,6 +19,7 @@ while True:
     print("2. Auto laten rijden")
     print("3. Auto tanken")
     print("4. Verhuur/Sales status wijzigen")
+    print("11. verbruik wijzigen")
     print("99. Programma beëindigen")
 
     keuze = input("Maak een keuze: ")
@@ -69,7 +70,25 @@ while True:
                     print("Ongeldige invoer.")
             else:
                 print("Ongeldige keuze.")
-    
+        
+    elif keuze == "11":
+       toon_autos(autos)
+       if autos:
+            auto_index = int(input("Kies een auto (nummer): ")) - 1
+            if 0 <= auto_index < len(autos):
+                liters= int(input("wat is de verbruik van de auto per 100km? "))
+                autos[auto_index].Verbruik=liters
+                toon_autos(autos)
+            else:
+                print("ongeldige keuze.")
+             
+
+               
+
+      
+          
+
+            
     elif keuze == "99":
         # Programma beëindige
         print("Programma beëindigd.")
