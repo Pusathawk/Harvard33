@@ -2,9 +2,12 @@
 from datetime import date
 
 class Auto:
-    def __init__(self, merk, model):
+    def __init__(self, merk, model, kenteken):
         self.merk = merk
         self.model = model
+        self.kenteken = kenteken
+        
+        self.Kilometerstand = 0  # standaard 0 km
         self.TankInhoud = 50
         self.AantalLitersInTank= 15
         self.Verbruik = 5  # verbruik in liters per 100 km  
@@ -20,6 +23,7 @@ class Auto:
             print(f"Hiermee kunt u {self.AantalLitersInTank/ self.Verbruik * 100} km rijden")
         else:
             self.AantalLitersInTank -= nodig
+            self.Kilometerstand += AantalKilometers
             print(f"We hebben {AantalKilometers} kilometer gereden. We hebben nog {self.AantalLitersInTank:.2f} liter over.")
 
     def Tanken(self, AantalLiters):

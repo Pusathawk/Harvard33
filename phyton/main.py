@@ -11,7 +11,7 @@ def toon_autos(autos):
         for i, auto in enumerate(autos):
             # if auto.SalesAuto:
             # expression_if_true if condition else expression_if_false
-            print(f"{i + 1}. {auto.merk} {auto.model} ({'Showroom' if auto.SalesAuto else 'VerhuurAuto'}, Liters in auto: {auto.AantalLitersInTank}L, Tankcapaciteit: {auto.TankInhoud}L, Verbruik: {auto.Verbruik}L/100km, Actieradius: {auto.AantalLitersInTank / auto.Verbruik * 100:.1f} km, Aankoopdatum: {auto.Aankoopdatum})") 
+            print(f"{i + 1}. {auto.merk} {auto.model} ({'Showroom' if auto.SalesAuto else 'VerhuurAuto'}, Kenteken: {auto.kenteken}, KM-stand: {auto.Kilometerstand} km, Liters in auto: {auto.AantalLitersInTank}L, Tankcapaciteit: {auto.TankInhoud}L, Verbruik: {auto.Verbruik}L/100km, Actieradius: {auto.AantalLitersInTank / auto.Verbruik * 100:.1f} km, Aankoopdatum: {auto.Aankoopdatum})")
 
 while True:
     print("\nMenu:")
@@ -19,7 +19,10 @@ while True:
     print("2. Auto laten rijden")
     print("3. Auto tanken")
     print("4. Verhuur/Sales status wijzigen")
+    print("5. Kilometerstand handmatig wijzigen")
+    print("8. Kenteken wijzigen")
     print("11. verbruik wijzigen")
+    print("12. Tankinhoud wijzigen")
     print("13. Aankoopdatum wijzigen")
     print("99. Programma beëindigen")
 
@@ -29,7 +32,8 @@ while True:
         # Auto toevoegen
         merk = input("Voer het merk van de auto in: ")
         model = input("Voer het model van de auto in: ")
-        nieuwe_auto = Auto(merk, model)
+        kenteken = input("Voer het kenteken van de auto in: ")
+        nieuwe_auto = Auto(merk, model, kenteken)
         autos.append(nieuwe_auto)
         print(f"Auto {merk} {model} is toegevoegd.")
     elif keuze == "2":
@@ -71,6 +75,38 @@ while True:
                     print("Ongeldige invoer.")
             else:
                 print("Ongeldige keuze.")
+
+    elif keuze == "5":
+        toon_autos(autos)
+        if autos:
+            auto_index = int(input("Kies een auto (nummer): ")) - 1
+            if 0 <= auto_index < len(autos):
+                try:
+                    nieuwe_km = int(input("Voer de nieuwe kilometerstand in: "))
+                    if nieuwe_km >= autos[auto_index].Kilometerstand:
+                        autos[auto_index].Kilometerstand = nieuwe_km
+                        print(f"Kilometerstand van {autos[auto_index].merk} {autos[auto_index].model} is gewijzigd naar {nieuwe_km} km.")
+                    else:
+                        print("Nieuwe kilometerstand mag niet lager zijn dan de huidige.")
+                except ValueError:
+                    print("Ongeldige invoer. Gebruik een geheel getal.")
+            else:
+                print("Ongeldige keuze.")
+        else:
+            print("Er zijn geen auto's om te wijzigen.")
+
+    elif keuze == "8":
+        toon_autos(autos)
+        if autos:
+            auto_index = int(input("Kies een auto (nummer): ")) - 1
+            if 0 <= auto_index < len(autos):
+                nieuw_kenteken = input("Voer het nieuwe kenteken in: ")
+                autos[auto_index].kenteken = nieuw_kenteken
+                print(f"Kenteken van {autos[auto_index].merk} {autos[auto_index].model} is gewijzigd naar {nieuw_kenteken}.")
+            else:
+                print("Ongeldige keuze.")
+        else:
+            print("Er zijn geen auto's om te wijzigen.")
         
     elif keuze == "11":
        toon_autos(autos)
@@ -82,6 +118,25 @@ while True:
                 toon_autos(autos)
             else:
                 print("ongeldige keuze.")
+
+    elif keuze == "12":
+        toon_autos(autos)
+        if autos:
+            auto_index = int(input("Kies een auto (nummer): ")) - 1
+            if 0 <= auto_index < len(autos):
+                try:
+                    nieuwe_tankinhoud = float(input("Voer de nieuwe tankinhoud in (in liters): "))
+                    if nieuwe_tankinhoud > 0:
+                        autos[auto_index].TankInhoud = nieuwe_tankinhoud
+                        print(f"Tankinhoud van {autos[auto_index].merk} {autos[auto_index].model} is gewijzigd naar {nieuwe_tankinhoud} liter.")
+                    else:
+                        print("Tankinhoud moet groter zijn dan 0.")
+                except ValueError:
+                    print("Ongeldige invoer. Gebruik een getal.")
+            else:
+                print("Ongeldige keuze.")
+        else:
+            print("Er zijn geen auto's om te wijzigen.")
 
     elif keuze == "13":
         toon_autos(autos)
